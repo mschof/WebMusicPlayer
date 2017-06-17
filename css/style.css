@@ -1,0 +1,133 @@
+/* Body */
+body {
+  font-family: Courier New, Courier, monospace;
+  font-size: 0.8em;
+  margin: 0px;
+  padding: 0px;
+  color: #AAAAAA;
+  background-color: #111111;
+}
+
+/* General */
+.hidden {
+  display: none !important;
+}
+
+/* Buttons */
+.button {
+  font-family: Courier New, Courier, monospace;
+  font-size: 1em;
+  color: orange;
+  background: none !important;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+}
+
+#button-closesearch, #button-closeplaylist {
+  float: right;
+  border: none;
+  padding: 0px;
+  font-size: 1em;
+}
+
+/* Song info area */
+#songinfo-container {
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 30%;
+}
+
+.songinfo-container-item {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* Account controls */
+#account-controls {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.account-controls-item {
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 30px;
+}
+
+.account-controls-item-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.account-controls-item-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* Search area */
+#search-container {
+  float: left;
+}
+
+/* Playlist area */
+#playlist-container {
+  float: right;
+}
+
+/* Search area and Playlist area */
+#search-container, #playlist-container {
+  box-shadow: 0px 0px 10px #111111;
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #222222;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+}
+
+#search-container:hover, #playlist-container:hover {
+  opacity: 1.0;
+}
+
+/* Player */
+#player-container {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+}
+
+#player {
+  width: 100%;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+}
+
+#player:hover {
+  opacity: 1.0;
+}
+
+/* Tables */
+table, th, td {
+  border: 1px solid #AAAAAA;
+  border-collapse: collapse;
+}
+
+th, td {
+  width: 15em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+  padding: 0.2em;
+}
