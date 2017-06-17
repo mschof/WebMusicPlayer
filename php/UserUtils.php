@@ -75,11 +75,6 @@ class UserUtils
       $result = $stmt->execute();
       $row = $result->fetchArray();
       $admin_count = $row['count'];
-
-      // Count
-      //while($entry = $result->fetchArray(SQLITE3_ASSOC)) {
-      //  $admin_count++;
-      //}
     }
     else {
       return false;
