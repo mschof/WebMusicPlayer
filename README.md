@@ -1,8 +1,6 @@
 # WebMusicPlayer
 This is a minimalist web application to stream music from your own server, written purely in JS and PHP.
 
-![Interface when playing](https://raw.githubusercontent.com/mschof/WebMusicPlayer/master/_github/interface_playing.png)
-
 ## File formats
 Currently, only FLAC files are supported (lossless is the way to go). This means that this web application can only by used with Mozilla Firefox, because it's the only one natively supporting FLAC files in HTML5 audio elements. I hope that more browsers will be able to play FLAC files in the future.
 
@@ -21,3 +19,7 @@ You also need an .htaccess file in your web application root folder, which enabl
 
 ## Other
 You may want to secure your data/ folder (where the database is) with an .htaccess file.
+
+## Images
+Interface when playing:
+![Interface when playing](https://raw.githubusercontent.com/mschof/WebMusicPlayer/master/_github/interface_playing.png)
