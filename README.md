@@ -12,3 +12,10 @@ This web application uses XSendFile in order to play music files before the full
 In order to activate XSendFile you first need to install mod_xsendfile on your machine and enable it in your web server configuration. Then you need to allow XSendFile to access the files in your music folder. On Apache, this can be done by adding following line to your httpd.conf:
 
 `XSendFilePath <path_to_your_music>`
+
+You also need an .htaccess file in your web application root folder, which enables XSendFile for this project. Just add the following line to this .htaccess file:
+
+`XSendFile on`
+
+## Other
+You might want to secure your data/ folder (where the database is) with an .htaccess file.
