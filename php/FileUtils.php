@@ -42,27 +42,6 @@ class FileUtils
     }
     
     return $music_files;
-    
-    
-    // $music_files = array();
-
-    // // Interrupt if string length < 3
-    // if(strlen($search_string) < 3)
-    //   return $music_files;
-
-    // global $MUSIC_PATH;
-    // $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($MUSIC_PATH));
-    // foreach($objects as $name => $object) {
-    //   if($objects->isDir() || strpos(strtolower($objects->getFilename()), strtolower($search_string)) === false) continue;
-    //   $entry = array();
-    //   $entry['title'] = $objects->getFilename();
-    //   $entry['artist'] = "some artist";
-    //   $entry['path'] = $objects->getPathname();
-
-    //   array_push($music_files, $entry);
-    // }
-    // sort($music_files);
-    // return $music_files;
   }
 
   public static function echoMusicFiles($extension)
