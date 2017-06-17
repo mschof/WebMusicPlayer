@@ -22,4 +22,5 @@ You may want to secure your data/ folder (where the database is) with an .htacce
 
 ## Images
 Interface when playing:
+
 ![Interface when playing](https://raw.githubusercontent.com/mschof/WebMusicPlayer/master/_github/interface_playing.png)
