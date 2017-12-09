@@ -142,6 +142,7 @@
       // Set new source and start playing
       var parent_row = this.parentElement.parentElement;
       var playlist_id = parseInt(UIUtils.getIndexInParent(parent_row));
+      console.log(playlist_id);
       PlayerUtils.playerPlaySong(parseInt(parent_row.getAttribute("data-songid")), playlist_id);
     });
 
@@ -182,11 +183,11 @@
       row.parentNode.insertBefore(row.nextElementSibling, row);
   }
   
-  static updateAlbumCover(song_title, song_album)
+  static updateAlbumCover(song_artist, song_album)
   {
     var image_cover_element = document.getElementById("image-cover");
     image_cover_element.classList.toggle("image-loading");
-    var search_string = song_title.split(" ").join("+") + "+" + song_album.split(" ").join("+");
+    var search_string = song_artist.split(" ").join("+") + "+" + song_album.split(" ").join("+");
     RequestUtils.requestAlbumCover(image_cover_element, search_string);
   }
 
@@ -221,7 +222,7 @@
     document.getElementById("songinfo-audioinfo").innerHTML = song_audioinfo;
 
     // Start update of cover
-    PlayerUtils.updateAlbumCover(song_title, song_album);
+    PlayerUtils.updateAlbumCover(song_artist, song_album);
   }
 
   static playerEnded()
