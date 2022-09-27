@@ -2,7 +2,7 @@
 This is a minimalist web application to stream music from your own server, written purely in JS and PHP.
 
 ## File formats
-Currently, only FLAC files are supported (lossless is the way to go). This means that this web application can only by used with Mozilla Firefox, because it's the only one natively supporting FLAC files in HTML5 audio elements. I hope that more browsers will be able to play FLAC files in the future.
+Currently, only FLAC files are supported (lossless is the way to go). This means that this web application can only be used with Mozilla Firefox, because it's the only one natively supporting FLAC files in HTML5 audio elements. I hope that more browsers will be able to play FLAC files in the future.
 
 ## Planned features
 Among the planned features is a more sophisticated playlist, possibly even multiple playlists, which can be stored in the database. I also want to add a user control panel to create additional users with limited rights (e.g. only streaming rights). The design of the web application is also something I would like to improve.
